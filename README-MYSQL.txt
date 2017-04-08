@@ -23,6 +23,8 @@ replacing "PASSWORD" with a password you choose:
     create database abe;
     CREATE USER 'abe'@'localhost' IDENTIFIED BY 'PASSWORD';
     grant all on abe.* to abe;
+//fix
+grant all on abe.* to 'abe'@'localhost';
 
 6. Create file abe-my.conf with the following contents, replacing
 "PASSWORD" as above:
